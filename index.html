@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DecentAI: AI agents you run yourself</title>
+  <meta name="description" content="DecentAI is an open-source platform for running AI agents under your control. It runs on your own computer or in your own environment; every agent is approved by you and every action is logged.">
+  <meta property="og:title" content="DecentAI">
+  <meta property="og:description" content="AI agents you run yourself. Every agent approved by you. Every action logged.">
+  <meta property="og:image" content="https://decentai.io/brand/decentai-og-1200x630.png">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="brand/decentai-mark-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="brand/decentai-mark-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-head">
+    <a class="site-brand" href="/" aria-label="DecentAI home">
+      <img class="site-logo only-light" src="brand/decentai-lockup-horizontal.svg" alt="DecentAI">
+      <img class="site-logo only-dark" src="brand/decentai-lockup-horizontal-dark.svg" alt="DecentAI">
+    </a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="#what">Product</a>
+      <a href="#start">Install</a>
+      <a href="https://github.com/decentai-io/decentai/tree/main/docs">Documentation</a>
+      <a class="btn" href="https://github.com/decentai-io/decentai">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-ground" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <span class="kicker">Open source</span>
+        <h1>DecentAI: AI agents you run yourself.</h1>
+        <p class="hero-lead">
+          Runs on your own computer or in your own environment. Every agent approved by you.
+          Every action logged. It ships with no agents; you add the ones you need.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn--primary btn--lg" href="https://github.com/decentai-io/decentai/releases/latest/download/DecentAI-windows.zip">Download for Windows</a>
+          <a class="btn btn--primary btn--lg" href="https://github.com/decentai-io/decentai/releases/latest/download/DecentAI-macos.zip">Download for Mac</a>
+          <a class="btn btn--lg" href="https://github.com/decentai-io/decentai/tree/main/docs">Read the documentation</a>
+        </div>
+        <p class="hero-note">Free and open source, under the Apache-2.0 licence. Needs Docker or Podman; the starter offers to install Podman.</p>
+      </div>
+    </section>
+
+    <section class="band" id="what">
+      <div class="band-head">
+        <span class="kicker">What DecentAI is</span>
+        <h2>A platform for running AI agents under your control.</h2>
+        <p>It ships with no agents. You add the ones you need.</p>
+      </div>
+      <div class="pillars">
+        <article class="pillar"><h3>Ships empty</h3><p>On day one the platform has users, groups and an audit log, and no agents. Nothing can act until you install something.</p></article>
+        <article class="pillar"><h3>Every agent is built to one standard</h3><p>Before it runs, an agent declares what it does, the resources it needs, the credentials it will use, and the permission level of each action.</p></article>
+        <article class="pillar"><h3>Installed and uninstalled like an app</h3><p>An administrator reads the declaration and installs one exact version. Uninstalling removes it completely. A new version is a new install.</p></article>
+        <article class="pillar"><h3>Governed by what it declared</h3><p>The platform holds every agent to its declaration on every action. Secrets are defined up front; an agent is given only the ones it declared, at the moment of an action, and every use is logged.</p></article>
+        <article class="pillar"><h3>Custom agents for your own use cases</h3><p>The same standard makes an agent for your ERP, portal or internal system a small job for any developer, with the platform&#x27;s controls already in place.</p></article>
+        <article class="pillar"><h3>Where the power is</h3><p>Any capability can be added, and none exists that you did not install.</p></article>
+      </div>
+    </section>
+
+    <section class="band band--alt">
+      <div class="band-head">
+        <span class="kicker">What agents do</span>
+        <h2>Each agent does one kind of work, in the systems you already use.</h2>
+        <p>You ask in plain language; the agent does the work and shows what it did.</p>
+      </div>
+      <div class="pillars kinds">
+        <article class="pillar"><h3>Services you sign in to</h3><p>Mail, calendars, chat, files, spreadsheets and forms in suites such as Microsoft 365 and Google Workspace. Read on a person&#x27;s behalf, changed only on their approval.</p></article>
+        <article class="pillar"><h3>Documents handed over</h3><p>Contracts, invoices, applications, scans. Read, checked, turned into records, with a reference to where each fact came from.</p></article>
+        <article class="pillar"><h3>Records you keep</h3><p>Structured data an agent maintains for you: claims, requests, cases. Kept by the platform, searchable, exportable, owned by you.</p></article>
+        <article class="pillar"><h3>Your own systems</h3><p>ERP, CRM, case management, internal portals. Reached by agents built for them under the same standard.</p></article>
+      </div>
+      <div class="pillars pillars--more">
+        <article class="pillar"><h3>Work that repeats</h3><p>Watch this inbox, review this every Monday, chase what nobody answered. Runs on schedule, reports only when there is something to say.</p></article>
+        <article class="pillar"><h3>Actions that matter wait for a person</h3><p>Sending, booking, submitting, deleting: the agent shows the exact action and waits for approval.</p></article>
+      </div>
+      <p class="band-close">One place to ask, any number of agents behind it, each doing the work it was installed to do.</p>
+    </section>
+
+    <section class="band">
+      <div class="band-head">
+        <span class="kicker">What you control</span>
+        <h2>Every control is set before an agent runs.</h2>
+        <p>Enforced by the platform on every action. Nothing depends on the agent behaving well.</p>
+      </div>
+      <div class="pillars">
+        <article class="pillar"><h3>Which agents exist</h3><p>An administrator installs one exact version after reading its declaration. Uninstall removes it. Nothing updates itself.</p></article>
+        <article class="pillar"><h3>Who may use each agent</h3><p>Agents are assigned to people and groups, and the assignment can be narrowed: one shared mailbox and no other, for example.</p></article>
+        <article class="pillar"><h3>What each action is allowed to do</h3><p>Every action carries a permission level, from read-only to changing the outside world. Actions above the level a user is trusted with wait for a person&#x27;s approval.</p></article>
+        <article class="pillar"><h3>Credentials and secrets</h3><p>Declared up front, stored encrypted, never shown to a person or to the AI model. A secret is released only to the agent that declared it, when it acts, and every use is logged. For a connected account the agent gets a short-lived access token, never the password or the token that renews access. Any credential can be revoked at once.</p></article>
+        <article class="pillar"><h3>The audit log</h3><p>Every action, every approval, every credential used, by user and by time. Written by the platform, not by the agent, and it cannot be edited.</p></article>
+        <article class="pillar"><h3>What your security team reviews</h3><p>A declaration and a log, not a model.</p></article>
+      </div>
+    </section>
+
+    <section class="band band--alt">
+      <div class="band-head">
+        <span class="kicker">Agents for your own systems</span>
+        <h2>The systems only you have get their own agents.</h2>
+        <p>The ERP, the CRM, the case system or the internal portal: built to the same standard and installed through the same door.</p>
+      </div>
+      <div class="pillars kinds">
+        <article class="pillar"><h3>One standard, published</h3><p>An agent is Python code you write, plus a declaration. You, your developers or anyone you choose write it against a stable interface, from a template. If it can be done in Python, an agent can do it.</p></article>
+        <article class="pillar"><h3>The platform supplies everything around it</h3><p>Sign-in and credentials, storage for the records it keeps, sharing, approvals, encryption and the audit log. The agent contains only the work itself.</p></article>
+        <article class="pillar"><h3>Days, not a project</h3><p>No database design, no admin screens, no integration layer to build. Declare what the agent keeps and needs, and the platform provides it.</p></article>
+        <article class="pillar"><h3>Tested before it runs</h3><p>Every agent ships with tests that run against stand-ins, so it is proven before it touches a real system.</p></article>
+      </div>
+      <p class="band-close">Your own agents are yours. They are installed, governed and logged exactly like every other agent, and they never leave your environment.</p>
+    </section>
+
+    <section class="band">
+      <div class="band-head">
+        <span class="kicker">Where it runs, and what stays yours</span>
+        <h2>DecentAI runs inside your environment.</h2>
+        <p>Nothing about your people, your conversations or your data passes through us.</p>
+      </div>
+      <div class="pillars kinds">
+        <article class="pillar"><h3>Your environment</h3><p>On your own computer, or in your own cloud account. There is no hosted version: the platform runs where you run it. One installation can serve several organizations, each fully separated from the others.</p></article>
+        <article class="pillar"><h3>Your AI model</h3><p>You choose the model provider and hold the keys. It can be changed per organization, and a model you host yourself is supported. The model sees a conversation; it never sees a credential.</p></article>
+        <article class="pillar"><h3>Your data</h3><p>Conversations, documents, records, credentials and the audit log stay in your environment. Everything an agent keeps for you can be opened and exported by you without the agent.</p></article>
+        <article class="pillar"><h3>Open source</h3><p>DecentAI is free software under the Apache-2.0 licence: read it, run it, change it. An update is installed when you choose to, and agent updates go through your own install approval.</p></article>
+      </div>
+      <p class="band-close">Only two things ever leave your environment: the request to the AI model you chose, and what an agent does in an account you connected.</p>
+    </section>
+
+    <section class="band band--alt">
+      <div class="band-head">
+        <span class="kicker">DecentAI compared with a general AI tool</span>
+        <h2>The difference is not the model. It is what surrounds it.</h2>
+      </div>
+      <div class="compare-wrap">
+        <table class="compare">
+          <thead>
+            <tr><th scope="col"><span class="sr-only">Aspect</span></th><th scope="col">A general AI tool</th><th scope="col" class="us">DecentAI</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Where it runs</th><td class="them">The vendor&#x27;s cloud</td><td class="us">Your environment</td></tr>
+            <tr><th scope="row">What it can do on day one</th><td class="them">Whatever it was connected to</td><td class="us">Nothing, until you install an agent</td></tr>
+            <tr><th scope="row">How capability is added</th><td class="them">A vendor connector, for everyone</td><td class="us">An agent you install, assign and can uninstall</td></tr>
+            <tr><th scope="row">Your credentials</th><td class="them">Held by the tool</td><td class="us">Encrypted, given only to the agent that declared them, every use logged</td></tr>
+            <tr><th scope="row">Actions that change things</th><td class="them">When the model decides</td><td class="us">Wait for a person, by permission level</td></tr>
+            <tr><th scope="row">What you can see afterwards</th><td class="them">A chat history</td><td class="us">An audit log of every action, approval and credential used</td></tr>
+            <tr><th scope="row">Your own systems</th><td class="them">A vendor roadmap item</td><td class="us">Python code your developers write, to one standard</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="band-close">A general tool asks you to trust the model. DecentAI asks you to approve a declaration and read a log.</p>
+    </section>
+
+    <section class="band" id="start">
+      <div class="band-head">
+        <span class="kicker">How to start</span>
+        <h2>On your own computer, in minutes.</h2>
+      </div>
+      <ol class="steps">
+        <li class="step"><span class="step-n">1</span><div><h3>Install it</h3><p>Download the starter for Windows or a Mac and open it. It uses Docker or Podman and sets DecentAI up on this computer, reachable from this computer only.</p></div></li>
+        <li class="step"><span class="step-n">2</span><div><h3>Add a model and agents</h3><p>Paste a key for the AI model you choose, add an agent source, and approve each agent after reading what it declares.</p></div></li>
+        <li class="step"><span class="step-n">3</span><div><h3>Ask for the work</h3><p>Open a chat and ask in plain language. Actions that change things wait for your approval, and every one is in the audit log.</p></div></li>
+      </ol>
+      <div class="hero-actions">
+          <a class="btn btn--primary btn--lg" href="https://github.com/decentai-io/decentai/releases/latest/download/DecentAI-windows.zip">Download for Windows</a>
+          <a class="btn btn--primary btn--lg" href="https://github.com/decentai-io/decentai/releases/latest/download/DecentAI-macos.zip">Download for Mac</a>
+          <a class="btn btn--lg" href="https://github.com/decentai-io/decentai/tree/main/docs">Read the documentation</a>
+        </div>
+      <p class="start-note">To run it on a server, or to build it yourself, see the <a href="https://github.com/decentai-io/decentai#readme">repository</a>.</p>
+    </section>
+
+    <section class="band band--cta">
+      <div class="cta-card">
+        <span class="kicker">Build your own</span>
+        <h2>An agent for your own work.</h2>
+        <p>An agent is Python code and a declaration. The agent template shows every part of one, with tests that run it the way the platform does.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="https://github.com/decentai-io/decentai-agent-template">The agent template</a>
+          <a class="btn" href="https://github.com/decentai-io/decentai-agents">The project's agents</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <span>DecentAI is free software under the Apache-2.0 licence.</span>
+    <nav aria-label="Footer">
+      <a href="https://github.com/decentai-io/decentai">Source</a>
+      <a href="https://github.com/decentai-io/decentai/tree/main/docs">Documentation</a>
+      <a href="https://github.com/decentai-io/decentai/blob/main/SECURITY.md">Security</a>
+      <a href="mailto:ahmed@decentai.io">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>
