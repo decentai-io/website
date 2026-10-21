@@ -228,6 +228,23 @@ a { color: var(--seal-ink); }
 .site-foot a { color: var(--ink-soft); text-decoration: none; }
 .site-foot a:hover { color: var(--ink); text-decoration: underline; }
 
+/* A page of prose: the privacy policy, support */
+.doc { max-width: 72ch; margin: 0 auto; padding: 56px clamp(18px, 5vw, 60px) 80px; }
+.doc h1 { margin: 10px 0 8px; font-size: clamp(28px, 4vw, 42px); line-height: 1.15; letter-spacing: -0.02em; }
+.doc h2 { margin: 40px 0 10px; font-size: 22px; letter-spacing: -0.01em; }
+.doc h3 { margin: 24px 0 6px; font-size: 17px; }
+.doc p, .doc li { color: var(--ink-soft); font-size: 16px; line-height: 1.7; }
+.doc p { margin: 0 0 12px; }
+.doc ul { margin: 0 0 12px; padding-left: 22px; }
+.doc li { margin: 6px 0; }
+.doc strong { color: var(--ink); font-weight: 600; }
+.doc a { color: var(--seal-ink); }
+.doc code { font-size: .92em; padding: 1px 5px; border-radius: 4px; background: var(--rule-soft); }
+.doc-meta { color: var(--ink-faint) !important; font-size: 14px !important; }
+.doc-short { margin: 28px 0 8px; padding: 18px 22px; border: 1px solid var(--seal-edge); border-radius: var(--radius-lg); background: var(--seal-wash); }
+.doc-short h2 { margin-top: 0; font-size: 18px; }
+.doc-short ul, .doc-short p:last-child { margin-bottom: 0; }
+
 @media (max-width: 640px) {
   .site-nav a:not(.btn) { display: none; }
   .hero-actions .btn { width: 100%; }

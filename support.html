@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support · DecentAI</title>
+  <meta name="description" content="Help with the DecentAI apps: connecting to a server, signing in, notifications and speech.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="brand/decentai-mark-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="brand/decentai-mark-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-head">
+    <a class="site-brand" href="/" aria-label="DecentAI home">
+      <img class="site-logo only-light" src="brand/decentai-lockup-horizontal.svg" alt="DecentAI">
+      <img class="site-logo only-dark" src="brand/decentai-lockup-horizontal-dark.svg" alt="DecentAI">
+    </a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/">Home</a>
+      <a href="privacy">Privacy</a>
+      <a class="btn" href="https://github.com/decentai-io">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="doc">
+    <span class="kicker">Support</span>
+    <h1>Help with the DecentAI apps</h1>
+    <p class="doc-meta">For the DecentAI app for iPhone and Android, and the DecentAI desktop app.</p>
+
+    <section class="doc-short">
+      <h2>Write to us</h2>
+      <p>Email <a href="mailto:ahmed@decentai.io">ahmed@decentai.io</a> with what you did, what you expected and what happened instead, and the app's version (on its page in the App Store or Google Play, or in the phone's app settings). We answer within a few working days.</p>
+      <p>A question about your account, your organization or what an agent may do is for your DecentAI server's administrator: they run the server and can see what we cannot.</p>
+    </section>
+
+    <h2>Connecting to a server</h2>
+    <p>The app is a client for a DecentAI server: on the first screen, enter the server's address, as its administrator gave it to you (for example <code>api.example.com</code>), then your email and password. The app has no sign-up of its own: accounts are made by each server's administrator.</p>
+    <ul>
+      <li><strong>"The server cannot be reached"</strong>: check the address, and that the phone can reach it. A server on your own computer, at <code>localhost</code>, is not reachable from the phone as <code>localhost</code>: that is the phone itself. Give the phone an address it can reach, such as a tunnel's https address.</li>
+      <li><strong>The desktop app connects, but signing in fails</strong>: the server must accept the desktop app's origins in its <code>CORS_ALLOW_ORIGINS</code> setting (<code>http://tauri.localhost</code> and <code>tauri://localhost</code>), which current servers do by default. Ask its administrator.</li>
+      <li><strong>Forgot your password</strong>: ask your server's administrator, who can reset it. Where the server sends email, its web client's sign-in page also offers <em>Forgot your password?</em></li>
+    </ul>
+
+    <h2>Notifications</h2>
+    <p>Allow notifications when the app asks, or later in the phone's settings. <em>Say what happened</em> (You → Notifications) chooses whether a notification carries the first words of a reply; your organization may have turned it off for everyone. Signing out stops notifications to that phone.</p>
+
+    <h2>Speech</h2>
+    <p>Tap the microphone to dictate. By default the phone recognizes speech itself, on the device; turn off <em>Use this phone's speech</em> (You) to have your server do it instead, where it runs speech.</p>
+
+    <h2>Your data</h2>
+    <p>The apps collect nothing for us: see the <a href="privacy">privacy policy</a>. Your chats and files are on your DecentAI server; to have them deleted, ask its operator.</p>
+
+    <h2>Running your own server</h2>
+    <p>DecentAI is open source. To run a server of your own, on your computer or on a host, see the <a href="https://github.com/decentai-io">project on GitHub</a>; the desktop app can also run one on your own computer.</p>
+  </main>
+
+  <footer class="site-foot">
+    <span>DecentAI is free software under the Apache-2.0 licence.</span>
+    <nav aria-label="Footer">
+      <a href="https://github.com/decentai-io">Source</a>
+      <a href="privacy">Privacy</a>
+      <a href="support">Support</a>
+      <a href="mailto:ahmed@decentai.io">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>

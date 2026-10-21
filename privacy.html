@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · DecentAI</title>
+  <meta name="description" content="How the DecentAI apps handle your data: they connect to a DecentAI server you choose, and the publisher collects nothing.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="brand/decentai-mark-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="brand/decentai-mark-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-head">
+    <a class="site-brand" href="/" aria-label="DecentAI home">
+      <img class="site-logo only-light" src="brand/decentai-lockup-horizontal.svg" alt="DecentAI">
+      <img class="site-logo only-dark" src="brand/decentai-lockup-horizontal-dark.svg" alt="DecentAI">
+    </a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/">Home</a>
+      <a href="support">Support</a>
+      <a class="btn" href="https://github.com/decentai-io">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="doc">
+    <span class="kicker">Privacy policy</span>
+    <h1>The DecentAI apps and your data</h1>
+    <p class="doc-meta">Effective 21 October 2026. Applies to the DecentAI app for iPhone and Android, the DecentAI desktop app for Windows and macOS, and this website.</p>
+
+    <section class="doc-short">
+      <h2>In short</h2>
+      <ul>
+        <li>The DecentAI apps are clients for a DecentAI server that you, your organization, or someone you chose runs. Your chats, files and account live on that server, not with us.</li>
+        <li>We, the publisher, run no server your chats, files or account pass through. The apps contain no analytics, no advertising and no tracking, and create no accounts.</li>
+        <li>The only service of ours, or of a provider working for us, that an app's data passes through is the delivery of notifications, and only if you allow them.</li>
+      </ul>
+    </section>
+
+    <h2>Who we are</h2>
+    <p>DecentAI is open-source software published by the DecentAI project (decentai.io), which publishes the apps in the App Store and on Google Play. You can reach us at <a href="mailto:ahmed@decentai.io">ahmed@decentai.io</a>.</p>
+    <p>The DecentAI server an app connects to is run by its operator: you, your organization, or a provider you chose. For the data kept on that server, the operator decides how it is used and kept, and is the one to ask. We cannot see it.</p>
+
+    <h2>The phone app</h2>
+
+    <h3>What it keeps on your phone</h3>
+    <ul>
+      <li>The address of the server you connect to.</li>
+      <li>Your session with that server, in the phone's keychain (iOS) or encrypted storage (Android). Signing out deletes it.</li>
+      <li>Your settings in the app, such as whether the phone's own speech is used.</li>
+    </ul>
+
+    <h3>What it sends, and to whom</h3>
+    <ul>
+      <li><strong>To your DecentAI server</strong>: what you type, say and attach; your answers to what the server asks you to approve; and, if you allow notifications, this phone's push token, so that the server can notify you.</li>
+      <li><strong>Notifications</strong>: your server sends them through Expo's push service (650 Industries, Inc., in the United States), which hands them to Apple Push Notification service or Firebase Cloud Messaging (Google) to reach your phone. A notification carries the chat's title, a short line such as the first words of a reply, and a link into the chat. To keep your chats' words out of notifications, turn off <em>Say what happened</em> (You → Notifications): a notification then says only that something is waiting or a chat has an answer. Your organization may have turned this off for everyone. You can turn notifications off altogether in the phone's settings; signing out also removes the phone from your server's list.</li>
+    </ul>
+    <p>Nothing else leaves the phone. The app talks to no other service of ours or of anyone else.</p>
+
+    <h3>Speech</h3>
+    <p>Dictation and reading aloud start only when you tap the microphone or the speaker. By default the phone turns what you say into text itself, on the device, and reads answers with its own voices: your voice is not sent anywhere. If you turn off <em>Use this phone's speech</em> (You), or the phone cannot recognize speech on the device, the recording goes to your DecentAI server instead, which turns it into text.</p>
+
+    <h3>Permissions it asks for</h3>
+    <ul>
+      <li><strong>Microphone and speech recognition</strong>: only after you tap the microphone, as above.</li>
+      <li><strong>Camera and photos</strong>: only when you choose to attach a photo to a chat.</li>
+      <li><strong>Notifications</strong>: to tell you when something waits for your approval, a reply is ready, or a scheduled task ends.</li>
+    </ul>
+    <p>Each can be refused, or withdrawn later in the phone's settings; the rest of the app works without it.</p>
+
+    <h2>The desktop app</h2>
+    <p>The desktop app either connects to a server you name, as the phone app does, or runs DecentAI on your own computer in containers, reachable from that computer only. In both cases what you do stays between the app and that server. To install and update DecentAI on your computer, it downloads a signed release file and the software it names from GitHub and from the container registries the file names; those services see the request, as with any download. It sends nothing else, and contains no analytics or tracking.</p>
+
+    <h2>Accounts, retention and deletion</h2>
+    <p>The apps create no accounts. Your account belongs to your DecentAI server: its administrator creates and removes it, and decides how long your chats and files are kept there. To have them deleted, ask that server's operator.</p>
+    <p>On the phone, signing out deletes your session and removes the phone from your server's notification list; removing the app deletes everything it kept. The desktop app's uninstall removes DecentAI and its data from your computer, with a copy of the database kept in your Documents folder only if you ask for one.</p>
+
+    <h2>Children</h2>
+    <p>The apps are tools for work and are not directed at children under 13. We collect no personal information from anyone, children included.</p>
+
+    <h2>Security</h2>
+    <p>Your session is kept in the phone's secure storage. The apps talk to your server over HTTPS when its address begins with https://, which every server reachable from the internet should use. How the server itself protects your data is its operator's to answer for.</p>
+
+    <h2>This website</h2>
+    <p>decentai.io is served by GitHub Pages and loads its typefaces from Google Fonts, so GitHub and Google receive your browser's request, including its IP address, as with any website they serve. The site sets no cookies and runs no analytics.</p>
+
+    <h2>Changes</h2>
+    <p>When this policy changes, the new version is published here with a new effective date. A change to what an app sends would come with an app update and be said here first.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about the apps or this policy: <a href="mailto:ahmed@decentai.io">ahmed@decentai.io</a>. Questions about the data on a server: that server's operator.</p>
+  </main>
+
+  <footer class="site-foot">
+    <span>DecentAI is free software under the Apache-2.0 licence.</span>
+    <nav aria-label="Footer">
+      <a href="https://github.com/decentai-io">Source</a>
+      <a href="privacy">Privacy</a>
+      <a href="support">Support</a>
+      <a href="mailto:ahmed@decentai.io">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>
