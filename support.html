@@ -41,16 +41,16 @@
     <h2>Connecting to a server</h2>
     <p>The app is a client for a DecentAI server: on the first screen, enter the server's address, as its administrator gave it to you (for example <code>api.example.com</code>), then your email and password. The app has no sign-up of its own: accounts are made by each server's administrator.</p>
     <ul>
-      <li><strong>"The server cannot be reached"</strong>: check the address, and that the phone can reach it. A server on your own computer, at <code>localhost</code>, is not reachable from the phone as <code>localhost</code>: that is the phone itself. Give the phone an address it can reach, such as a tunnel's https address.</li>
+      <li><strong>"Could not reach that server"</strong>: check the address, and that the phone can reach it. A server on your own computer, at <code>localhost</code>, is not reachable from the phone as <code>localhost</code>: that is the phone itself. Give the phone an address it can reach, such as a tunnel's https address.</li>
       <li><strong>The desktop app connects, but signing in fails</strong>: the server must accept the desktop app's origins in its <code>CORS_ALLOW_ORIGINS</code> setting (<code>http://tauri.localhost</code> and <code>tauri://localhost</code>), which current servers do by default. Ask its administrator.</li>
-      <li><strong>Forgot your password</strong>: ask your server's administrator, who can reset it. Where the server sends email, its web client's sign-in page also offers <em>Forgot your password?</em></li>
+      <li><strong>Forgot your password</strong>: ask your server's administrator, who can reset it. Where the server sends email, its web client's sign-in page also offers <em>Forgot your password?</em> For DecentAI run by the desktop app on your own computer, use <em>Reset a password</em> in the app's own window.</li>
     </ul>
 
     <h2>Notifications</h2>
-    <p>Allow notifications when the app asks, or later in the phone's settings. <em>Say what happened</em> (You → Notifications) chooses whether a notification carries the first words of a reply; your organization may have turned it off for everyone. Signing out stops notifications to that phone.</p>
+    <p>Allow notifications when the app asks, or later in the phone's settings. <em>Say what happened</em> (You → Notifications) chooses whether a notification carries the first words of a reply; your organization may have turned it off for everyone. <em>Send a test</em> on the same page checks that the phone is reached. Signing out stops notifications to that phone.</p>
 
     <h2>Speech</h2>
-    <p>Tap the microphone to dictate. By default the phone recognizes speech itself, on the device; turn off <em>Use this phone's speech</em> (You) to have your server do it instead, where it runs speech.</p>
+    <p>Tap the microphone to dictate. By default the phone recognizes speech itself, on the device, and reads answers aloud with its own voices; turn off <em>Use this phone's speech</em> (You) to have your server do both instead, where it runs speech.</p>
 
     <h2>Your data</h2>
     <p>The apps collect nothing for us: see the <a href="privacy">privacy policy</a>. Your chats and files are on your DecentAI server; to have them deleted, ask its operator.</p>
