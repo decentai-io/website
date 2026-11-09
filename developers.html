@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Developers · DecentAI</title>
+  <meta name="description" content="Write a DecentAI agent in any language: a manifest and a program that speaks JSON messages on its standard input and output. Publish it in a catalog, call the platform from your own code, or contribute.">
+  <meta property="og:title" content="DecentAI for developers">
+  <meta property="og:image" content="https://decentai.io/brand/decentai-og-1200x630.png">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="brand/decentai-mark-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="brand/decentai-mark-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-head">
+    <a class="site-brand" href="/" aria-label="DecentAI home">
+      <img class="site-logo only-light" src="brand/decentai-lockup-horizontal.svg" alt="DecentAI">
+      <img class="site-logo only-dark" src="brand/decentai-lockup-horizontal-dark.svg" alt="DecentAI">
+    </a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="product">Product</a>
+      <a href="agents">Agents</a>
+      <a href="developers" aria-current="page">Developers</a>
+      <a href="download">Download</a>
+      <a href="https://github.com/decentai-io/decentai/tree/main/documentation">Documentation</a>
+      <a class="btn" href="https://github.com/decentai-io">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero--page">
+      <div class="hero-ground" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <span class="kicker">Developers</span>
+        <h1>Write an agent in any language.</h1>
+        <p class="hero-lead">An agent is a manifest and a program. There is no SDK to learn: the standard is one document, and the platform supplies sign-in, storage, approvals, encryption and the audit trail around your code.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary btn--lg" href="https://github.com/decentai-io/decentai/blob/main/documentation/agents.md">Read the standard</a>
+          <a class="btn btn--lg" href="https://github.com/decentai-io/decentai/tree/main/documentation/examples">See the examples</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="band-head">
+        <span class="kicker">What an agent is</span>
+        <h2>Two files' worth of contract.</h2>
+      </div>
+      <div class="pillars kinds">
+        <article class="pillar"><h3>The manifest</h3><p>What the agent declares: each function with its inputs and outputs, its level and what it calls; the secrets, data and files it keeps; and the hosts it connects to. Reviewers read it, and the platform holds the program to it.</p></article>
+        <article class="pillar"><h3>The program</h3><p>Anything that reads and writes JSON messages, one per line, on its standard input and output: <code>ready</code>, <code>call</code>, <code>result</code>, <code>error</code>, <code>cancel</code> and <code>note</code>. Packed as a zip with <code>start</code> at its root, for x86_64 and aarch64.</p></article>
+        <article class="pillar"><h3>What it may call</h3><p>The platform's own functions: read and keep records, ask the chat's model, ask the person, and open a host for one call. Each one declared, each at its level.</p></article>
+        <article class="pillar"><h3>Where it runs</h3><p>In a sandbox process of its own, with its own home and network, reaching the hosts it declared through the platform's way out. A base with Python 3.12 is there if the program wants it.</p></article>
+      </div>
+    </section>
+
+    <section class="band band--alt">
+      <div class="band-head">
+        <span class="kicker">From idea to installed</span>
+        <h2>Write, test, publish, install.</h2>
+      </div>
+      <ol class="steps">
+        <li class="step"><span class="step-n">1</span><div><h3>Start from an example</h3><p>The documentation's two examples are a few lines each. The project's Note agent shows every feature the platform enforces.</p></div></li>
+        <li class="step"><span class="step-n">2</span><div><h3>Test it as a process</h3><p>Run the program and speak to it in the standard's messages. The agents repository's tests show how, with every outside service a stand-in.</p></div></li>
+        <li class="step"><span class="step-n">3</span><div><h3>Publish a catalog</h3><p>One <code>catalog.json</code> at an address you choose, naming each version's files by their digests. A version never changes; a fix is a new version.</p></div></li>
+        <li class="step"><span class="step-n">4</span><div><h3>Install it</h3><p>An administrator adds your catalog as a source, private ones with a token, reviews the agent and installs it.</p></div></li>
+      </ol>
+      <div class="hero-actions actions-start">
+        <a class="btn btn--primary" href="https://github.com/decentai-io/decentai/blob/main/documentation/agents.md#10-publishing">Publishing a catalog</a>
+        <a class="btn" href="https://github.com/decentai-io/decentai-agents/tree/main/agents/note">The Note agent</a>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="band-head">
+        <span class="kicker">Beyond agents</span>
+        <h2>Call DecentAI from your own code.</h2>
+      </div>
+      <div class="pillars kinds">
+        <article class="pillar"><h3>The API</h3><p>Every call is <code>POST /app</code> with an endpoint and its data, and an API key. Whatever a person can do in the web client, a script can do with their permissions.</p><p class="pillar-links"><a href="https://github.com/decentai-io/decentai/blob/main/documentation/api-server.md#3-calls-answers-and-permissions">Calls and permissions</a></p></article>
+        <article class="pillar"><h3>Webhooks</h3><p>Another system starts work in a chat, signed with its own secret, at a trust the organization caps.</p><p class="pillar-links"><a href="https://github.com/decentai-io/decentai/blob/main/documentation/api-server.md#8-settings">Settings</a></p></article>
+        <article class="pillar"><h3>The platform itself</h3><p>Read how each part is built and why, run its tests, and propose a change.</p><p class="pillar-links"><a href="https://github.com/decentai-io/decentai/blob/main/CONTRIBUTING.md">Contributing</a><a href="https://github.com/decentai-io/decentai/blob/main/SECURITY.md">Security</a></p></article>
+      </div>
+    </section>
+
+    <section class="band band--alt" id="source">
+      <div class="band-head">
+        <span class="kicker">The source</span>
+        <h2>Everything is on GitHub, under Apache-2.0.</h2>
+      </div>
+      <div class="pillars kinds">
+        <article class="pillar"><h3>decentai</h3><p>The platform: API server, runtime, sandbox, issuer, speech, deployment, and the documentation.</p><p class="pillar-links"><a href="https://github.com/decentai-io/decentai">Repository</a></p></article>
+        <article class="pillar"><h3>decentai-web-client</h3><p>The web app people use, in Angular. Static files you can host anywhere.</p><p class="pillar-links"><a href="https://github.com/decentai-io/decentai-web-client">Repository</a></p></article>
+        <article class="pillar"><h3>decentai-agents</h3><p>The project's thirty-seven agents, their tests, and the catalog built from them.</p><p class="pillar-links"><a href="https://github.com/decentai-io/decentai-agents">Repository</a></p></article>
+        <article class="pillar"><h3>decentai-browser</h3><p>The browser agent, with Chromium carried in its program, and its catalog.</p><p class="pillar-links"><a href="https://github.com/ahmed-dirir/decentai-browser">Repository</a></p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <span>© 2026 DECENT INTELLIGENCE ARTIFICIAL SERVICES, Abu Dhabi. DecentAI is free software under the Apache-2.0 licence.</span>
+    <nav aria-label="Footer">
+      <a href="https://github.com/decentai-io">Source</a>
+      <a href="https://github.com/decentai-io/decentai/tree/main/documentation">Documentation</a>
+      <a href="https://github.com/decentai-io/decentai/blob/main/SECURITY.md">Security</a>
+      <a href="about">About</a>
+      <a href="privacy">Privacy</a>
+      <a href="support">Support</a>
+      <a href="mailto:ahmed@decentai.io">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>

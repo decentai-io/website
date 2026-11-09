@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download · DecentAI</title>
+  <meta name="description" content="Get DecentAI: run the platform with Docker, open the web client, add the agent catalogs. The desktop app for Windows and macOS and the mobile apps for iPhone and Android are coming soon.">
+  <meta property="og:title" content="Get DecentAI">
+  <meta property="og:image" content="https://decentai.io/brand/decentai-og-1200x630.png">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="brand/decentai-mark-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="brand/decentai-mark-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-head">
+    <a class="site-brand" href="/" aria-label="DecentAI home">
+      <img class="site-logo only-light" src="brand/decentai-lockup-horizontal.svg" alt="DecentAI">
+      <img class="site-logo only-dark" src="brand/decentai-lockup-horizontal-dark.svg" alt="DecentAI">
+    </a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="product">Product</a>
+      <a href="agents">Agents</a>
+      <a href="developers">Developers</a>
+      <a href="download" aria-current="page">Download</a>
+      <a href="https://github.com/decentai-io/decentai/tree/main/documentation">Documentation</a>
+      <a class="btn" href="https://github.com/decentai-io">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero--page">
+      <div class="hero-ground" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <span class="kicker">Download</span>
+        <h1>Get DecentAI.</h1>
+        <p class="hero-lead">Run the platform yourself, then reach it from a browser today, and from your desktop and phone soon. Everything here is free and open source.</p>
+      </div>
+    </section>
+
+    <section class="band" id="platform">
+      <div class="band-head">
+        <span class="kicker">Step 1</span>
+        <h2>The platform</h2>
+        <p>Needs Docker with Compose, and Python 3.9 or later. On Windows, macOS or Linux.</p>
+      </div>
+      <pre class="code">git clone https://github.com/decentai-io/decentai.git
+cd decentai
+python deploy/setup/setup.py</pre>
+      <p class="band-text">The first time, it generates every password and key, builds and starts DecentAI, and prints its address, <code>http://localhost:4280</code>, served to this computer only, with the first run's code. <code>python deploy/setup/setup.py --link</code> shows them again.</p>
+      <p class="band-text">To run it on a server and keep it running, follow <a href="https://github.com/decentai-io/decentai/blob/main/documentation/operating.md#3-on-a-server">operating</a> in the documentation.</p>
+    </section>
+
+    <section class="band band--alt" id="web">
+      <div class="band-head">
+        <span class="kicker">Step 2</span>
+        <h2>The web client</h2>
+        <p>The app people use in a browser. Start it beside the platform:</p>
+      </div>
+      <pre class="code">git clone https://github.com/decentai-io/decentai-web-client.git ../decentai-web-client
+cd ../decentai-web-client &amp;&amp; docker compose up -d --build</pre>
+      <p class="band-text">Open <code>http://localhost:4300</code>, give it the platform's address and the first run's code, and name your organization and yourself: you are its administrator. The web client is static files, so it can also be hosted anywhere, <a href="https://github.com/decentai-io/decentai-web-client/blob/main/docs/hosting.md">as its hosting guide explains</a>.</p>
+    </section>
+
+    <section class="band" id="agents">
+      <div class="band-head">
+        <span class="kicker">Step 3</span>
+        <h2>Agents</h2>
+        <p>In the web client, open <strong>Agents</strong>, then <strong>Marketplace</strong>, and add a source with either address. No credential is needed.</p>
+      </div>
+      <pre class="code">https://raw.githubusercontent.com/decentai-io/decentai-agents/main/catalog/catalog.json</pre>
+      <pre class="code">https://raw.githubusercontent.com/ahmed-dirir/decentai-browser/main/catalog/catalog.json</pre>
+      <p class="band-text">The first is thirty-seven agents for mail, calendars, files, documents and records; the second, a real web browser. <a href="agents">What each one does</a>.</p>
+    </section>
+
+    <section class="band band--alt" id="apps">
+      <div class="band-head">
+        <span class="kicker">The apps</span>
+        <h2>On your desktop and your phone.</h2>
+        <p>Each app connects to a DecentAI server your organization runs, or one of your own.</p>
+      </div>
+      <div class="pillars kinds">
+        <article class="pillar"><span class="tag tag--soon">Coming soon</span><h3>Windows and macOS</h3><p>Connect to a DecentAI server, or run DecentAI on the computer itself, with Docker or Podman, in one window.</p></article>
+        <article class="pillar"><span class="tag tag--soon">Coming soon</span><h3>iPhone</h3><p>Chats, approvals and notifications, with dictation on the phone itself. On the App Store.</p></article>
+        <article class="pillar"><span class="tag tag--soon">Coming soon</span><h3>Android</h3><p>The same for Android phones. On Google Play.</p></article>
+      </div>
+    </section>
+
+    <section class="band band--cta">
+      <div class="cta-card">
+        <span class="kicker">Need a hand?</span>
+        <h2>Help, and the whole story.</h2>
+        <p>The documentation covers running DecentAI, its parts and the agent standard. For anything else, write to us.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="https://github.com/decentai-io/decentai/tree/main/documentation">Read the documentation</a>
+          <a class="btn" href="support">Support</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <span>© 2026 DECENT INTELLIGENCE ARTIFICIAL SERVICES, Abu Dhabi. DecentAI is free software under the Apache-2.0 licence.</span>
+    <nav aria-label="Footer">
+      <a href="https://github.com/decentai-io">Source</a>
+      <a href="https://github.com/decentai-io/decentai/tree/main/documentation">Documentation</a>
+      <a href="https://github.com/decentai-io/decentai/blob/main/SECURITY.md">Security</a>
+      <a href="about">About</a>
+      <a href="privacy">Privacy</a>
+      <a href="support">Support</a>
+      <a href="mailto:ahmed@decentai.io">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>

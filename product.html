@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product · DecentAI</title>
+  <meta name="description" content="How DecentAI turns a request into work: the assistant proposes, the platform checks every call against the agent's declaration, your rules and the chat's trust, and the agent works in a sandbox of its own.">
+  <meta property="og:title" content="DecentAI: the product">
+  <meta property="og:image" content="https://decentai.io/brand/decentai-og-1200x630.png">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="brand/decentai-mark-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="brand/decentai-mark-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-head">
+    <a class="site-brand" href="/" aria-label="DecentAI home">
+      <img class="site-logo only-light" src="brand/decentai-lockup-horizontal.svg" alt="DecentAI">
+      <img class="site-logo only-dark" src="brand/decentai-lockup-horizontal-dark.svg" alt="DecentAI">
+    </a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="product" aria-current="page">Product</a>
+      <a href="agents">Agents</a>
+      <a href="developers">Developers</a>
+      <a href="download">Download</a>
+      <a href="https://github.com/decentai-io/decentai/tree/main/documentation">Documentation</a>
+      <a class="btn" href="https://github.com/decentai-io">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero--page">
+      <div class="hero-ground" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <span class="kicker">Product</span>
+        <h1>Agents that work for you, under rules you set.</h1>
+        <p class="hero-lead">People ask an assistant for work in plain words. The assistant does it through agents your organization installed, and the platform checks every step.</p>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="band-head">
+        <span class="kicker">From a request to the work</span>
+        <h2>The model proposes; the platform decides.</h2>
+      </div>
+      <ol class="steps">
+        <li class="step"><span class="step-n">1</span><div><h3>You ask</h3><p>In a chat, typed or spoken. A schedule or another system, through a webhook, can start work too.</p></div></li>
+        <li class="step"><span class="step-n">2</span><div><h3>The assistant chooses</h3><p>The model picks which agent to call and with what. It authorizes nothing.</p></div></li>
+        <li class="step"><span class="step-n">3</span><div><h3>The platform checks</h3><p>The call must be one the agent declared, allowed by your organization's rules, and within the chat's trust. Above that trust, the person approves.</p></div></li>
+        <li class="step"><span class="step-n">4</span><div><h3>The agent works</h3><p>Its program runs in a sandbox, reads and keeps only what it declared, and the call goes on the audit trail.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="band band--alt">
+      <div class="band-head">
+        <span class="kicker">What you control</span>
+        <h2>Every control is set before an agent runs.</h2>
+        <p>Enforced by the platform on every call. Nothing depends on the agent behaving well.</p>
+      </div>
+      <div class="pillars">
+        <article class="pillar"><h3>Which agents exist</h3><p>Administrators add the catalogs they trust and install one exact version after reading its declaration. Its files are checked against their digests, and it is started once with no network to prove it is what it says, before anyone uses it.</p></article>
+        <article class="pillar"><h3>Who may use what</h3><p>People belong to groups, and groups to policies. A rule allows, denies or asks, for people and for agents' actions alike. A denial always wins, and nothing is allowed by default.</p></article>
+        <article class="pillar"><h3>How far each action reaches</h3><p>Every action declares a level: reading, changing, wider changes, or acting outside the platform. One above the chat's trust waits for a person's approval, which can be remembered for that agent.</p></article>
+        <article class="pillar"><h3>Credentials and secrets</h3><p>Stored encrypted, never shown to the model. A secret reaches only an agent its record lists, during a call. For a connected account the agent gets a fresh access token, never the password.</p></article>
+        <article class="pillar"><h3>Where agents connect</h3><p>Only to the hosts an agent declared, or ones a person opened for a single call. Public addresses only, and never a site your organization blocked.</p></article>
+        <article class="pillar"><h3>The audit trail</h3><p>Every call, approval and refusal, by person and by time. Written by the platform, not the agent, and never edited.</p></article>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="band-head">
+        <span class="kicker">Every day</span>
+        <h2>What people and administrators use it for.</h2>
+      </div>
+      <div class="pillars kinds">
+        <article class="pillar"><h3>Chats</h3><p>An assistant in each chat, with its own agents, model and trust. Cards ask for an approval, a choice or a sign-in, right where the work is.</p></article>
+        <article class="pillar"><h3>Records you own</h3><p>Data, files and secrets agents keep for you, each with an owner and a list of the agents that may reach it. Shared or handed over by hand.</p></article>
+        <article class="pillar"><h3>Work that repeats</h3><p>Schedules run a chat's work on a cadence and report when there is something to say. Webhooks let another system start work, at a trust you cap.</p></article>
+        <article class="pillar"><h3>Notifications</h3><p>Web push, email, or addresses you choose, such as Slack or Teams. An organization can make them say only that something happened.</p></article>
+        <article class="pillar"><h3>Speech</h3><p>Dictate and listen, with speech models on your own machine or a model connection you choose. Off until you turn it on.</p></article>
+        <article class="pillar"><h3>The assistant's own tools</h3><p>Memories and skills the assistant keeps for a person, and the MCP servers they add, which an organization can turn off.</p></article>
+        <article class="pillar"><h3>Several organizations</h3><p>One installation can host several organizations, each kept apart, each able to hold its chats on runtimes of its own.</p></article>
+        <article class="pillar"><h3>Scripts and systems</h3><p>Everything the web client does is an API call. Scripts call it with an API key that expires.</p></article>
+      </div>
+    </section>
+
+    <section class="band band--alt">
+      <div class="band-head">
+        <span class="kicker">Built to be checked</span>
+        <h2>Small parts, each doing one thing.</h2>
+        <p>Every call between them is HTTPS with mutual TLS, by certificates from your deployment's own roots.</p>
+      </div>
+      <div class="pillars kinds">
+        <article class="pillar"><h3>API server</h3><p>The platform's data and who may do what with it: people, agents, records, chats, settings and the trail. It runs no agent's code and calls no model.</p></article>
+        <article class="pillar"><h3>Runtime</h3><p>Holds the active chats: their agents' processes, the check on every call, the way out to the network, and the assistant that thinks in each. It keeps nothing.</p></article>
+        <article class="pillar"><h3>Sandbox</h3><p>Runs each agent's program in a jail of its own: its own files, its own network, its own memory limit. It knows programs, never chats.</p></article>
+        <article class="pillar"><h3>Issuer and speech</h3><p>The issuer certifies every other part. Speech turns voice to text and back with models on your machine.</p></article>
+      </div>
+      <p class="band-close">Why each part is what it is, and exactly what it does, is in the <a href="https://github.com/decentai-io/decentai/tree/main/documentation">documentation</a>.</p>
+    </section>
+
+    <section class="band band--cta">
+      <div class="cta-card">
+        <span class="kicker">Try it</span>
+        <h2>Run DecentAI on your own computer.</h2>
+        <p>One command sets it up with Docker. Add a model, add an agent catalog, and ask.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="download">Get DecentAI</a>
+          <a class="btn" href="agents">Browse the agents</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <span>© 2026 DECENT INTELLIGENCE ARTIFICIAL SERVICES, Abu Dhabi. DecentAI is free software under the Apache-2.0 licence.</span>
+    <nav aria-label="Footer">
+      <a href="https://github.com/decentai-io">Source</a>
+      <a href="https://github.com/decentai-io/decentai/tree/main/documentation">Documentation</a>
+      <a href="https://github.com/decentai-io/decentai/blob/main/SECURITY.md">Security</a>
+      <a href="about">About</a>
+      <a href="privacy">Privacy</a>
+      <a href="support">Support</a>
+      <a href="mailto:ahmed@decentai.io">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>
