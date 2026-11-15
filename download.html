@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Download · DecentAI</title>
-  <meta name="description" content="Get DecentAI: run the platform with Docker, open the web client, add the agent catalogs. The desktop app for Windows and macOS and the mobile apps for iPhone and Android are coming soon.">
+  <title>Get DecentAI · DecentAI</title>
+  <meta name="description" content="Get DecentAI: what it runs on, and how to request access or a demo. It runs on your own computer or your organization's own infrastructure. The agents are open source.">
   <meta property="og:title" content="Get DecentAI">
   <meta property="og:image" content="https://decentai.io/brand/decentai-og-1200x630.png">
   <meta name="color-scheme" content="light dark">
@@ -26,9 +26,8 @@
       <a href="product">Product</a>
       <a href="agents">Agents</a>
       <a href="developers">Developers</a>
-      <a href="download" aria-current="page">Download</a>
-      <a href="https://github.com/decentai-io/decentai-engine/tree/main/documentation">Documentation</a>
-      <a class="btn" href="https://github.com/decentai-io">GitHub</a>
+      <a href="https://github.com/decentai-io/decentai-official-agents/blob/main/STANDARD.md">Agent standard</a>
+      <a class="btn" href="download" aria-current="page">Get DecentAI</a>
     </nav>
   </header>
 
@@ -36,41 +35,51 @@
     <section class="hero hero--page">
       <div class="hero-ground" aria-hidden="true"></div>
       <div class="hero-inner">
-        <span class="kicker">Download</span>
+        <span class="kicker">Get DecentAI</span>
         <h1>Get DecentAI.</h1>
-        <p class="hero-lead">Run the platform yourself, then reach it from a browser today, and from your desktop and phone soon. Everything here is free for individuals and small businesses; larger organizations buy a licence.</p>
+        <p class="hero-lead">DecentAI is available on request. It runs where you run it, on your own computer or your organization's own infrastructure; we host nothing, and nothing about your data passes through us.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary btn--lg" href="mailto:ahmed@decentai.io">Request access</a>
+          <a class="btn btn--lg" href="product">See how it works</a>
+        </div>
       </div>
     </section>
 
     <section class="band" id="platform">
       <div class="band-head">
-        <span class="kicker">Step 1</span>
-        <h2>The platform</h2>
-        <p>Needs Docker with Compose, and Python 3.9 or later. On Windows, macOS or Linux.</p>
+        <span class="kicker">What it runs on</span>
+        <h2>Your computer, or your own servers.</h2>
+        <p>DecentAI runs with Docker and Compose, on Windows, macOS or Linux.</p>
       </div>
-      <pre class="code">git clone https://github.com/decentai-io/decentai-engine.git
-cd decentai-engine
-python deploy/setup/setup.py</pre>
-      <p class="band-text">The first time, it generates every password and key, builds and starts DecentAI, and prints its address, <code>http://localhost:4280</code>, served to this computer only, with the first run's code. <code>python deploy/setup/setup.py --link</code> shows them again.</p>
-      <p class="band-text">To run it on a server and keep it running, follow <a href="https://github.com/decentai-io/decentai-engine/blob/main/documentation/operating.md#3-on-a-server">operating</a> in the documentation.</p>
+      <div class="pillars kinds">
+        <article class="pillar"><h3>The platform</h3><p>People, agents, records and chats, the sandbox agents run in, and the audit trail. On one computer, served to it only, or on your servers or cloud account. One installation can serve several organizations, each kept apart.</p></article>
+        <article class="pillar"><h3>The web client</h3><p>The app people use in a browser. Static files, served beside the platform or from any host you choose.</p></article>
+        <article class="pillar"><h3>Your AI model</h3><p>One of over two hundred providers, or a model you host yourself. You hold the keys.</p></article>
+        <article class="pillar"><h3>Agents</h3><p>None at first. You add the ones you need from catalogs, each after reading what it declares.</p><p class="pillar-links"><a href="#agents">The public catalogs</a></p></article>
+      </div>
     </section>
 
-    <section class="band band--alt" id="web">
+    <section class="band band--alt" id="access">
       <div class="band-head">
-        <span class="kicker">Step 2</span>
-        <h2>The web client</h2>
-        <p>The app people use in a browser. Start it beside the platform:</p>
+        <span class="kicker">Request access</span>
+        <h2>Write to us.</h2>
+        <p>We grant access case by case.</p>
       </div>
-      <pre class="code">git clone https://github.com/decentai-io/decentai-web-client.git ../decentai-web-client
-cd ../decentai-web-client &amp;&amp; docker compose up -d --build</pre>
-      <p class="band-text">Open <code>http://localhost:4300</code>, give it the platform's address and the first run's code, and name your organization and yourself: you are its administrator. The web client is static files, so it can also be hosted anywhere, <a href="https://github.com/decentai-io/decentai-web-client/blob/main/docs/hosting.md">as its hosting guide explains</a>.</p>
+      <ol class="steps">
+        <li class="step"><span class="step-n">1</span><div><h3>Tell us who you are</h3><p>Write to <a href="mailto:ahmed@decentai.io">ahmed@decentai.io</a> with your organization and what you'd like to do with DecentAI.</p></div></li>
+        <li class="step"><span class="step-n">2</span><div><h3>We answer</h3><p>Within a few working days, with access to the platform and its web client, or a time for a demo.</p></div></li>
+        <li class="step"><span class="step-n">3</span><div><h3>Run it yourself</h3><p>One command sets DecentAI up with Docker and generates every password and key. Then add a model and the agents you need.</p></div></li>
+      </ol>
+      <div class="hero-actions actions-start">
+        <a class="btn btn--primary" href="mailto:ahmed@decentai.io">Request access</a>
+      </div>
     </section>
 
     <section class="band" id="agents">
       <div class="band-head">
-        <span class="kicker">Step 3</span>
-        <h2>Agents</h2>
-        <p>In the web client, open <strong>Agents</strong>, then <strong>Marketplace</strong>, and add a source with either address. No credential is needed.</p>
+        <span class="kicker">Agents</span>
+        <h2>Open source, for everyone.</h2>
+        <p>The project's agents are under Apache-2.0, in two public catalogs. In DecentAI, open <strong>Agents</strong>, then <strong>Marketplace</strong>, and add a source with either address. No credential is needed.</p>
       </div>
       <pre class="code">https://raw.githubusercontent.com/decentai-io/decentai-official-agents/main/catalog/catalog.json</pre>
       <pre class="code">https://raw.githubusercontent.com/decentai-io/decentai-browser-agent/main/catalog/catalog.json</pre>
@@ -92,11 +101,11 @@ cd ../decentai-web-client &amp;&amp; docker compose up -d --build</pre>
 
     <section class="band band--cta">
       <div class="cta-card">
-        <span class="kicker">Need a hand?</span>
-        <h2>Help, and the whole story.</h2>
-        <p>The documentation covers running DecentAI, its parts and the agent standard. For anything else, write to us.</p>
+        <span class="kicker">Not sure yet?</span>
+        <h2>Ask us anything.</h2>
+        <p>Whether DecentAI fits your work, what it would take to run, or how an agent for your own systems would look. Write to us.</p>
         <div class="hero-actions">
-          <a class="btn btn--primary" href="https://github.com/decentai-io/decentai-engine/tree/main/documentation">Read the documentation</a>
+          <a class="btn btn--primary" href="mailto:ahmed@decentai.io">Write to us</a>
           <a class="btn" href="support">Support</a>
         </div>
       </div>
@@ -104,11 +113,11 @@ cd ../decentai-web-client &amp;&amp; docker compose up -d --build</pre>
   </main>
 
   <footer class="site-foot">
-    <span>© 2026 DECENT INTELLIGENCE ARTIFICIAL SERVICES, Abu Dhabi. DecentAI is source-available under the PolyForm Small Business licence.</span>
+    <span>© 2026 DECENT INTELLIGENCE ARTIFICIAL SERVICES, Abu Dhabi. DecentAI is proprietary software; its agents are open source under Apache-2.0.</span>
     <nav aria-label="Footer">
-      <a href="https://github.com/decentai-io">Source</a>
-      <a href="https://github.com/decentai-io/decentai-engine/tree/main/documentation">Documentation</a>
-      <a href="https://github.com/decentai-io/decentai-engine/blob/main/SECURITY.md">Security</a>
+      <a href="https://github.com/decentai-io/decentai-official-agents">Agents' source</a>
+      <a href="https://github.com/decentai-io/decentai-official-agents/blob/main/STANDARD.md">Agent standard</a>
+      <a href="mailto:ahmed@decentai.io">Security</a>
       <a href="about">About</a>
       <a href="privacy">Privacy</a>
       <a href="support">Support</a>
